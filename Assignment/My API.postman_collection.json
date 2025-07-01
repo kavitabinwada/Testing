@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "68387f2c-fd84-4701-972f-62b836529a79",
+		"name": "My API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46145065",
+		"_collection_link": "https://kavitapatel-7686569.postman.co/workspace/KavitaPatel's-Workspace~a0a5e835-9bb9-4728-85f3-1ff9802cdba8/collection/46145065-68387f2c-fd84-4701-972f-62b836529a79?action=share&source=collection_link&creator=46145065"
+	},
+	"item": [
+		{
+			"name": "First",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\":\"Ashmi\",\r\n    \"lname\":\"Patel\",\r\n    \"email\":\"ashmi@gmail.com\",\r\n    \"phno\":\"12345\",\r\n    \"pass\":\"123123\",\r\n    \"gender\":\"female\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/userreg",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"userreg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Second",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ashmi@gmail.com\",\r\n    \"pass\":\"123123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/userlogin",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"userlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Third",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/alogin",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"alogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3NTEwMjI2NTJ9._iJsR8MkS8MHSUQw046PoM4phGLxY-tza8UWmT4hb28",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"catname\":\"TestAss\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/addcategory",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"addcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fifth",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3NTEwMjI2NTJ9._iJsR8MkS8MHSUQw046PoM4phGLxY-tza8UWmT4hb28",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://restapilive.onrender.com/category?did=685e7f6774dffc9721334eb6",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"category"
+					],
+					"query": [
+						{
+							"key": "did",
+							"value": "685e7f6774dffc9721334eb6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sixth",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3NTEwMjI2NTJ9._iJsR8MkS8MHSUQw046PoM4phGLxY-tza8UWmT4hb28",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"catname\":\"TestAss\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/deletecat",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"deletecat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
