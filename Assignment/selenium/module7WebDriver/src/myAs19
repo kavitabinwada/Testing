@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+  <parameter name="un" value="standard_user"  />
+  <parameter name="ps" value="secret_sauce"  />
+    <classes>
+      <class name="com.prac1.As19"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
